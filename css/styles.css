@@ -1,0 +1,156 @@
+* {
+	padding:0;
+	margin:0;
+	font-family: 'Quicksand', sans-serif;
+	color: #333;
+}
+header {
+	height:70px;
+}
+header h1 {
+	display: inline-block;
+	padding:15px 24px;
+	text-transform: uppercase;
+}
+header h1 a {
+	transition: .3s;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	padding:24px;
+	display: inline-block;
+}
+header ul li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+
+}
+header ul li a:hover {
+	background-color: #425c77;
+  color: white;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width:90%;
+	margin:0 auto;
+}
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.banner {
+	background-color: #1F68B6;
+	padding:80px 0;
+}
+section {
+	padding:50px 0;
+}
+.banner h2,
+.banner p,
+.banner span {
+	color: rgb(255, 255, 255);
+}
+.banner h2 {
+	margin-bottom: 10px;
+}
+.banner p {
+	font-size: 18px;
+}
+.banner-left {
+	padding-left:24px;
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+section h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: #ddd;
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: #F84744;
+	left: calc(50% - 20px);
+}
+#about p {
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	
+}
+#about aside img{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+.profile{
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.col-3 {
+	width:33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding:50px 10px;
+}
+
+.profile img {
+	width: 200px;
+  }
+
+footer {
+	background-color: #333;
+	padding:50px;
+	text-align: center;
+}
+footer small {
+	color: #fff;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+@media (max-width: 667px){
+	header ul {
+		display: none;
+	}
+	.col-3 {
+		width:100%;
+		}
+	.profile {
+	    width:100%;
+	}
+	#about
+	p {
+	width: 100%;
+	padding: 0;
+	}
+
+}
